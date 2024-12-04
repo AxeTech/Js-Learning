@@ -46,3 +46,4 @@ console.log(typeof someNumber);
 console.log(typeof stringNumber);
 console.log(stringNumber);
 
+// we are usign the above to convert the number into string

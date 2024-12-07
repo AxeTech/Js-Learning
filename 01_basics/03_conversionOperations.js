@@ -42,8 +42,72 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(typeof someNumber);
-console.log(typeof stringNumber);
-console.log(stringNumber);
+// console.log(typeof someNumber);
+// console.log(typeof stringNumber);
+// console.log(stringNumber);
 
 // we are usign the above to convert the number into string
+
+// ************ Operarions **************
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/2);
+// console.log(2%2);
+// console.log(2**3);
+
+let str1 = "hello"
+let str2 = " Kunal"
+let str3 = str1 + str2
+// console.log(str3);
+// console.log(str1+str2);
+
+// console.log("1"+2);
+// console.log(1+"2");
+// console.log("1"+2+2);
+// console.log(1+2+"2")
+
+
+/*
+Generally JS takes the first value into consideration and then moves forward so 
+in this example above it would first take string so
+1 => 12
+2=> 12
+3=> 122
+4=> 32
+*/
+
+
+//This will add a number to the gamecounter 
+// let gameCounter = 100
+// gameCounter++;
+// console.log(gameCounter);
+
+// let x = 3
+// const y = ++x;
+
+// console.log(y);
+
+// y will be printed as 4
+
+// let x = 3
+// const y = x++;
+
+// console.log(y);
+
+// y will be printer as 3
+
+/*
+In the above examples, we are using both prefix (++x) and postfix (x++) increment operators.
+
+1. In the first example (prefix), the value of x is incremented **first**, and then the updated value is used.
+   This is why the console.log() shows the incremented value.
+
+2. In the second example (postfix), the value of x is used **first**, and then it is incremented.
+   This is why the console.log() shows the original value before the increment.
+
+To summarize:
+- Prefix (++x): Increment happens first; the updated value is used immediately.
+- Postfix (x++): The original value is used first; increment happens afterward.
+*/

@@ -18,6 +18,11 @@ converts string into a Number
 // console.log("2" > 1);
 // console.log("02" > 1);
 
+
+// console.log(null > 0);  // false
+// console.log(null == 0); // false
+// console.log(null >= 0); // true
+
 /*
 The reason the logs behave this way is due to the difference 
 in how JavaScript handles comparisons (>, <, >=, <=) 
@@ -37,9 +42,9 @@ This is why the results are:
 - `null >= 0` → `true`
 */
 
-console.log(null > 0);  // false
-console.log(null == 0); // false
-console.log(null >= 0); // true
+console.log(undefined == 0);  // 
+console.log(undefined > 0); // 
+console.log(undefined < 0); // 
 
 
 

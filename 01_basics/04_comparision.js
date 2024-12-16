@@ -42,10 +42,15 @@ This is why the results are:
 - `null >= 0` → `true`
 */
 
-console.log(undefined == 0);  // 
-console.log(undefined > 0); // 
-console.log(undefined < 0); // 
+// console.log(undefined == 0);  // false
+// console.log(undefined > 0); // false
+// console.log(undefined < 0); // false 
 
+/*
+Undefined comparisions will always come as fall irrespective of comparision or equality 
+*/
+
+// === use strict is to be used as sometimes we are comparing across data types
 
 
 

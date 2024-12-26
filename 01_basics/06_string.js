@@ -122,6 +122,7 @@ const splitTwo = "JavaScript-is-Amazing"
 const firstName = "Kunal"
 const lastName = "Shah"
 // console.log(firstName.concat(" ",lastName)); // This is used to combine two or more strings 
+// console.log(firstName.concat(" ",lastName," ","God"));
 
 const word = "Hi !"
 // console.log(word.repeat(4)) // Repeats the string the specified number of times in our case 4 
@@ -129,3 +130,50 @@ const word = "Hi !"
 const pad = "5"
 // console.log(pad.padStart(4,"k")); // used to ensure consistent length by adding string at start or end so all length will be same 
 // console.log(pad.padEnd(4,"k"));
+
+const valueOf = "This is Primitive"
+const valueOf2 = new String("This is Non Primitive Object");
+
+// console.log(valueOf2.valueOf());
+// console.log(typeof valueOf);
+// console.log(typeof valueOf2);
+// console.log(typeof valueOf2.valueOf());
+
+/*
+1. `.valueOf()` is used to convert a String Object into a Primitive String.
+2. When a String Object (created using `new String()`) is converted using `.valueOf()`, 
+   it returns the entire primitive string value of the object.
+3. This ensures that the string can be treated as a primitive for operations like 
+   comparisons, calculations, or other string manipulations.
+
+Example:
+const strObject = new String("Hello World");
+console.log(strObject.valueOf()); // Output: "Hello World" (primitive value of the string object)
+console.log(typeof strObject);    // Output: "object" (it's a String object)
+console.log(typeof strObject.valueOf()); // Output: "string" (primitive string)
+
+*/
+
+let str1 = "banana"
+let str2 = "apple"
+
+// console.log(str1.localeCompare(str2)); // 1
+// console.log(str2.localeCompare(str1)); // -1
+// console.log(str1.localeCompare("banana")); // 0
+
+
+/* 
+This method is used to compare one string with another.
+- The string before `.localeCompare()` is the **calling string**.
+- The string inside the parentheses is the **comparing string**.
+
+Rules:
+1. If the calling string comes **after** the comparing string alphabetically → result is **1**.
+2. If the calling string comes **before** the comparing string alphabetically → result is **-1**.
+3. If the calling string is **equal to** the comparing string → result is **0**.
+*/
+
+const toString = new String("Hello World");
+console.log(typeof toString);
+console.log(toString.toString());
+console.log(typeof toString.toString());

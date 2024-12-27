@@ -174,6 +174,109 @@ Rules:
 */
 
 const toString = new String("Hello World");
-console.log(typeof toString);
-console.log(toString.toString());
-console.log(typeof toString.toString());
+// console.log(typeof toString);
+// console.log(toString.toString());
+// console.log(typeof toString.toString());
+const valueOf3 = new String("this is a Test");
+const valueOf4 = new Number(27);
+// console.log(typeof valueOf3); // Object
+// console.log(typeof valueOf4); // Object
+// console.log(typeof valueOf3.valueOf()); // String
+// console.log(typeof valueOf4.valueOf()); // Number 
+// console.log(typeof valueOf4.toString()); //String
+
+/* toString is used to convert any object into string irrespective of it being a Number,Date anything)
+valueOf is used to convert the object into its primitive value so object string will become string
+*/
+
+const match = "This is a very basic example no 1 out of 36 or 58 match maybe matches or yeah match"
+// console.log(match.match(/match/g));
+const match2 = "There were 4 apples and i ate 2"
+// console.log(match2.match(/\d+/g));
+
+/* So this is used for matching the exact word in the string 
+it returns the number of time it appears 
+basically you use regex patterns to find the match 
+
+/patter/ you can add g at end so it wont stop at first match will see full string
+you can add \d so it will look for numbers 
+*/
+
+/* .search() Just like index of but used for regex */
+
+const codePoint = "This is Amazing 😊"
+// console.log(codePoint.codePointAt(16)); // Returns unicode point of emojis
+
+const charCodeAt = "A B C" 
+// console.log(charCodeAt.charCodeAt(0)); // used to find the UTF-16 code of a character at specified index
+// console.log(charCodeAt.charCodeAt(3));
+// console.log(charCodeAt.charCodeAt(4)); 
+
+console.log(String.fromCharCode(65,66,67)); // "ABC"
+console.log(String.fromCodePoint(128522)); // Returns a Smiley
+console.log(String.raw`Hello\nWorld`); // Ignores New lines or other characters and shows raw text
+const raw = "Hello\nWorld" // Output Hello (Next Line) World
+console.log(raw);
+
+/* So there are two types of methods in Strings 
+Statcic and instance method 
+
+Instances method automatically converts the string into an object and then performs methods on it 
+and in Static you have to cinvert the string into an object string and then perform the method 
+
+there are 3 static methods and rest are instances 
+
+.fromCharCode - Converts UTF-16 code to text
+.fromCodePoint -  converts unicode to smiley 
+.raw - converts string to raw text 
+
+/*
+
+/*
+There are two types of methods in Strings:
+
+1. **Instance Methods**:
+   - Work on individual string instances (e.g., `"Hello".toUpperCase()`).
+   - JavaScript **automatically converts primitive strings into String objects** behind the scenes to perform these methods.
+   - Examples: `.charAt()`, `.slice()`, `.toUpperCase()`, etc.
+
+2. **Static Methods**:
+   - Belong to the `String` class itself, not to individual string instances.
+   - You call these methods directly on `String`, not on variables or string literals.
+   - Examples:
+     1. **`String.fromCharCode()`**:
+        - Converts **UTF-16 code units** (numbers) into characters.
+        - Example:
+          ```javascript
+          console.log(String.fromCharCode(65, 66, 67)); // Output: "ABC"
+          ```
+
+     2. **`String.fromCodePoint()`**:
+        - Converts **Unicode code points** (including emojis or characters beyond UTF-16) into characters.
+        - Example:
+          ```javascript
+          console.log(String.fromCodePoint(128522)); // Output: "😊"
+          ```
+
+     3. **`String.raw()`**:
+        - Converts template literals into their **raw text representation**, ignoring escape sequences like `\n` or `\t`.
+        - Example:
+          ```javascript
+          console.log(String.raw`Hello\nWorld`); // Output: "Hello\nWorld" (ignores newline)
+          ```
+
+Example of Instance Method:
+```javascript
+const text = "Hello World";
+console.log(text.toUpperCase()); // Output: "HELLO WORLD"
+
+*/
+
+
+/* Things have kept on hold for now 
+- regex patterns in .match()
+- .matchAll()
+- .normalize()
+*/
+
+

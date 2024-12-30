@@ -186,7 +186,7 @@ const valueOf4 = new Number(27);
 // console.log(typeof valueOf4.toString()); //String
 
 /* toString is used to convert any object into string irrespective of it being a Number,Date anything)
-valueOf is used to convert the object into its primitive value so object string will become string
+valueOf is used to convert the object into its primitive value so object string will become string , object number will become number
 */
 
 const match = "This is a very basic example no 1 out of 36 or 58 match maybe matches or yeah match"
